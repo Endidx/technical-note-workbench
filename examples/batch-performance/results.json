@@ -1,0 +1,263 @@
+{
+  "measuredAtUTC": "2026-11-24T12:48:04.505134+00:00",
+  "machine": {
+    "system": "Darwin",
+    "release": "25.4.0",
+    "macOS": "26.4",
+    "arch": "arm64",
+    "logicalCPUs": 10,
+    "python": "3.9.6",
+    "java": "openjdk version \"17.0.21.1\" 2026-11-17 LTS\nOpenJDK Runtime Environment Corretto-17.0.21.1.2 (build 17.0.21.1+2-LTS)\nOpenJDK 64-Bit Server VM Corretto-17.0.21.1.2 (build 17.0.21.1+2-LTS, mixed mode, sharing)"
+  },
+  "jarSha256": "384a18f428fc55941dc07909994c2b32f0a08c650d7f4339e441ddcc55158862",
+  "analyzerSourcesSha256": "bfb28d1b27d89f557cf3cb5c1c5d32eb9fe7c54a156a2f15c3929cf71423852e",
+  "notes": 25,
+  "inputSha256": "2ac94e9f3ab43ede495193c01528dd22b657c020984d98cf9f35e0779b0da491",
+  "sourceFilesSha256": {
+    "sklearn-1.1.3.md": "cad7ad4096085b3b4296ed8504d5ef6678b67a0e552a3a2b9a372fa96180b4c2",
+    "sklearn-1.4.2.md": "9f59919eba697a3ff9b900802efcb6a80a3bc94a34efaefde1f2eed59a8aa80e"
+  },
+  "fixtureFamilies": 5,
+  "expectedCounts": {
+    "ask": 5,
+    "edit": 10,
+    "keep": 5,
+    "irrelevant": 5
+  },
+  "backend": "Spring Boot + file H2 (WRITE_DELAY=0) + local Python subprocess per note; concept index",
+  "timing": "Client monotonic wall clock from POST start through first complete GET, 25 ms polls; one excluded full warmup per fresh JVM, same published DB generation, alternating pair order.",
+  "parallelismConfig": "review.batch.parallelism",
+  "runs": [
+    {
+      "pair": 1,
+      "parallelism": 1,
+      "batchId": "5cb1ee6f-daef-4cc4-87d5-ace10424bf96",
+      "seconds": 1.600502,
+      "itemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58"
+    },
+    {
+      "pair": 1,
+      "parallelism": 4,
+      "batchId": "102a6a64-bcf8-4c8a-8fb0-ec8dbe9ebbb7",
+      "seconds": 0.507301,
+      "itemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58"
+    },
+    {
+      "pair": 2,
+      "parallelism": 4,
+      "batchId": "c9dd12da-0198-4f73-892d-43ff0e914c25",
+      "seconds": 0.505454,
+      "itemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58"
+    },
+    {
+      "pair": 2,
+      "parallelism": 1,
+      "batchId": "db2eb505-99fa-4737-a251-023c203faeeb",
+      "seconds": 1.58406,
+      "itemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58"
+    },
+    {
+      "pair": 3,
+      "parallelism": 1,
+      "batchId": "044f2452-1d86-42ec-a25b-198a1ff0cd70",
+      "seconds": 1.614057,
+      "itemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58"
+    },
+    {
+      "pair": 3,
+      "parallelism": 4,
+      "batchId": "abd7bd90-8752-4cce-9d80-2c6d814b2821",
+      "seconds": 0.545151,
+      "itemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58"
+    }
+  ],
+  "medianSeconds": {
+    "1": 1.600502,
+    "4": 0.507301
+  },
+  "ratioOfMedians": 3.1549,
+  "pairedSpeedups": [
+    3.1549,
+    3.1339,
+    2.9608
+  ],
+  "allOrderedItemsEqual": true,
+  "referenceItemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58",
+  "referenceItems": {
+    "group-01-01-config.md": {
+      "id": "1",
+      "status": "ask",
+      "sha256": "59dfb6e557889c409b3af167bb7b928fff0cd4ba44e197e1850e559960d67af9"
+    },
+    "group-01-02-clustering.md": {
+      "id": "2",
+      "status": "edit",
+      "sha256": "47eb5900b18a444b69522b8ce7bc39a880244cef73ac2febc6dfb066f3279444"
+    },
+    "group-01-03-features.md": {
+      "id": "3",
+      "status": "edit",
+      "sha256": "df6e1ac9186acd4650092a6e9100fc2977621b51a4185741e7bb61f4dec17aba"
+    },
+    "group-01-04-ready.md": {
+      "id": "4",
+      "status": "keep",
+      "sha256": "dd8849d86c142a9e6d235cb7e9306a694535d14e80db964c9067544d252598d2"
+    },
+    "group-01-05-stats.md": {
+      "id": "5",
+      "status": "irrelevant",
+      "sha256": "70e5c6526de3e9f0facea33c160dce60891a2ebf6db5be7315e8f2d88b8fa6c4"
+    },
+    "group-02-01-config.md": {
+      "id": "6",
+      "status": "ask",
+      "sha256": "6c99dee559814fead6b5dd01f2163de3ecbf91690bb0b9705a2e44a8971101b9"
+    },
+    "group-02-02-clustering.md": {
+      "id": "7",
+      "status": "edit",
+      "sha256": "279aec32e1abc017cf082806747adca080fd0b563a0e7fc0bd491b15829f58ec"
+    },
+    "group-02-03-features.md": {
+      "id": "8",
+      "status": "edit",
+      "sha256": "74b99e9fef85a42e5ab0acd9ad7998bc7c9ff0f0f5c991df7538e66ce06be558"
+    },
+    "group-02-04-ready.md": {
+      "id": "9",
+      "status": "keep",
+      "sha256": "017e118e51b7965b77027d977e61030f1d1369b91ade39822725c3b583030bf6"
+    },
+    "group-02-05-stats.md": {
+      "id": "10",
+      "status": "irrelevant",
+      "sha256": "affcdad901e52a2524344d101ce61d7b60e30ad42141b77b9daac59cc3621e3e"
+    },
+    "group-03-01-config.md": {
+      "id": "11",
+      "status": "ask",
+      "sha256": "71c1a060b6f97510c85819dd8c7291c7ac2bd018070196fbbfb499bd4b892453"
+    },
+    "group-03-02-clustering.md": {
+      "id": "12",
+      "status": "edit",
+      "sha256": "3ed335b0bf9ef6d4ae9ba5e33613138814da6cc8aca62b2ae13270c777b7956e"
+    },
+    "group-03-03-features.md": {
+      "id": "13",
+      "status": "edit",
+      "sha256": "112835a9f2f6165c0b6c56aac857ad96645db132d3f88139431659db4b506d44"
+    },
+    "group-03-04-ready.md": {
+      "id": "14",
+      "status": "keep",
+      "sha256": "5b265641a16a869aa93a706f801cb71a182dcbb795a0deb605302bf3ddd0c79c"
+    },
+    "group-03-05-stats.md": {
+      "id": "15",
+      "status": "irrelevant",
+      "sha256": "e990370af2f269b46de94b8bbe294e252b48f4cb85ec14e81fa46b26109e6766"
+    },
+    "group-04-01-config.md": {
+      "id": "16",
+      "status": "ask",
+      "sha256": "6c6552cd76754b08af71bb0db07fe3c04768cf539c172fad1d05dd1eafc92118"
+    },
+    "group-04-02-clustering.md": {
+      "id": "17",
+      "status": "edit",
+      "sha256": "82c977e4545e7ca781c29207f119a3f5b5747a90c36ff4b5523abff76e5cc0ad"
+    },
+    "group-04-03-features.md": {
+      "id": "18",
+      "status": "edit",
+      "sha256": "38ecf3d6d350e73a4342b87c4812f64182e93e2657cf6db49b2d0f6e00331b5e"
+    },
+    "group-04-04-ready.md": {
+      "id": "19",
+      "status": "keep",
+      "sha256": "0b059d7b105fb6f30a04e6caee611e1a69bc148fe8c765852a56b28fb2b1be9b"
+    },
+    "group-04-05-stats.md": {
+      "id": "20",
+      "status": "irrelevant",
+      "sha256": "2b918f1f168da621264826b77f67d20201ed98a4e559dcb35b1947b46dd2d41b"
+    },
+    "group-05-01-config.md": {
+      "id": "21",
+      "status": "ask",
+      "sha256": "6b234574d043b5f7701ad475f821469549c73dfeb0d6209416e21575f19b1160"
+    },
+    "group-05-02-clustering.md": {
+      "id": "22",
+      "status": "edit",
+      "sha256": "a7b004118f41571ea139cdb1beebd41a71a3a8fa257a9fb925e544f622b6472c"
+    },
+    "group-05-03-features.md": {
+      "id": "23",
+      "status": "edit",
+      "sha256": "1388a630a8ea97aa8f7a1b04439794b17ed79f724f5200a88be4c1b43b1dc209"
+    },
+    "group-05-04-ready.md": {
+      "id": "24",
+      "status": "keep",
+      "sha256": "10ae7d648a61a6495bda3007949bc4f4d9ba185de9b7e971933ac0c4d61c5d3f"
+    },
+    "group-05-05-stats.md": {
+      "id": "25",
+      "status": "irrelevant",
+      "sha256": "ddd2be2187cc13f7eb893582e7fcc49775b5abf1b0610ac9d04ec2c9b09cc916"
+    }
+  },
+  "crashRecovery": {
+    "batchId": "6fbe3106-ddd3-4fe0-8d8c-ff3f6009951e",
+    "signal": "SIGKILL",
+    "leaseMs": 4000,
+    "observedBeforeKill": 4,
+    "durableAfterReopen": 4,
+    "durableItemSha256": {
+      "group-01-01-config.md": "59dfb6e557889c409b3af167bb7b928fff0cd4ba44e197e1850e559960d67af9",
+      "group-01-02-clustering.md": "47eb5900b18a444b69522b8ce7bc39a880244cef73ac2febc6dfb066f3279444",
+      "group-01-03-features.md": "df6e1ac9186acd4650092a6e9100fc2977621b51a4185741e7bb61f4dec17aba",
+      "group-01-04-ready.md": "dd8849d86c142a9e6d235cb7e9306a694535d14e80db964c9067544d252598d2"
+    },
+    "analyzerStartsBeforeKill": [
+      "group-01-03-features.md",
+      "group-01-04-ready.md",
+      "group-01-02-clustering.md",
+      "group-01-01-config.md",
+      "group-02-03-features.md",
+      "group-01-05-stats.md",
+      "group-02-02-clustering.md",
+      "group-02-01-config.md"
+    ],
+    "analyzerStartsAfterRecovery": [
+      "group-02-03-features.md",
+      "group-02-04-ready.md",
+      "group-02-05-stats.md",
+      "group-03-01-config.md",
+      "group-01-05-stats.md",
+      "group-03-02-clustering.md",
+      "group-03-03-features.md",
+      "group-03-04-ready.md",
+      "group-04-01-config.md",
+      "group-03-05-stats.md",
+      "group-04-03-features.md",
+      "group-04-02-clustering.md",
+      "group-04-04-ready.md",
+      "group-04-05-stats.md",
+      "group-02-01-config.md",
+      "group-02-02-clustering.md",
+      "group-05-01-config.md",
+      "group-05-02-clustering.md",
+      "group-05-03-features.md",
+      "group-05-04-ready.md",
+      "group-05-05-stats.md"
+    ],
+    "previouslyDurableItemsReanalyzed": 0,
+    "finalItemsSha256": "83dc277177c9c539bc3fce215966ca888eb54d2191cf5cf1581b51717abbda58",
+    "finalCount": 25,
+    "recoverySecondsIncludingJVMStartAndShutdown": 3.739279
+  }
+}

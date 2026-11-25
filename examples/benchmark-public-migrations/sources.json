@@ -1,0 +1,170 @@
+[
+  {
+    "id": "p01",
+    "repo": "google/qkeras",
+    "commit": "3b7d08cb877adfe0c29fe4f4c46aa242589cb540",
+    "parent": "2198dc331aca10ea1cea66b0d69f3c41c676c48d",
+    "path": "qkeras/codebook.py",
+    "lines": [
+      142,
+      143
+    ],
+    "parentPermalink": "https://github.com/google/qkeras/blob/2198dc331aca10ea1cea66b0d69f3c41c676c48d/qkeras/codebook.py#L142-L143",
+    "commitUrl": "https://github.com/google/qkeras/commit/3b7d08cb877adfe0c29fe4f4c46aa242589cb540",
+    "commitDate": "2025-04-04T18:58:32Z",
+    "inputMode": "documented_decision_replay",
+    "inputSource": "父版本代码语义及提交说明或差异内的维护者决定，以中文译述。",
+    "rationaleExcerpt": "Update KMeans n_init to be backwards compatible with 1.0.2.",
+    "rationaleLocation": "提交说明",
+    "observedChange": "为各处 KMeans 调用指定 10。",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/google/qkeras/blob/2198dc331aca10ea1cea66b0d69f3c41c676c48d/LICENSE",
+    "copyrightHeaders": [
+      "# Copyright 2020 Google LLC"
+    ]
+  },
+  {
+    "id": "p02",
+    "repo": "noahschnitzer/kemstem",
+    "commit": "0f45b337feef7b286c2be6a66e81cc5d82293178",
+    "parent": "2cb7fa256fe41c37b421fa4ef5175bf3897b9af7",
+    "path": "src/kemstem/atomic/neighborhood.py",
+    "lines": [
+      11,
+      13
+    ],
+    "parentPermalink": "https://github.com/noahschnitzer/kemstem/blob/2cb7fa256fe41c37b421fa4ef5175bf3897b9af7/src/kemstem/atomic/neighborhood.py#L11-L13",
+    "commitUrl": "https://github.com/noahschnitzer/kemstem/commit/0f45b337feef7b286c2be6a66e81cc5d82293178",
+    "commitDate": "2024-06-10T21:30:49Z",
+    "inputMode": "parent_only",
+    "inputSource": "仅父版本函数语义。提交说明及改动没有提供给系统。",
+    "rationaleExcerpt": "set n_init in kmeans to supress warning",
+    "rationaleLocation": "提交说明",
+    "observedChange": "构造器新增 auto；记录的原因为抑制警告。",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://github.com/noahschnitzer/kemstem/blob/2cb7fa256fe41c37b421fa4ef5175bf3897b9af7/LICENSE",
+    "copyrightHeaders": []
+  },
+  {
+    "id": "p03",
+    "repo": "bgproutes-io/forged_origin_hijacks_detection",
+    "commit": "52a3ebdc6be135f20e225b07818bb7a54def627b",
+    "parent": "09414d15508dd73a3b71c484c57794a6aeacf173",
+    "path": "core/sampling/main/utils.py",
+    "lines": [
+      237,
+      239
+    ],
+    "parentPermalink": "https://github.com/bgproutes-io/forged_origin_hijacks_detection/blob/09414d15508dd73a3b71c484c57794a6aeacf173/core/sampling/main/utils.py#L237-L239",
+    "commitUrl": "https://github.com/bgproutes-io/forged_origin_hijacks_detection/commit/52a3ebdc6be135f20e225b07818bb7a54def627b",
+    "commitDate": "2025-09-09T15:18:12Z",
+    "inputMode": "documented_decision_replay",
+    "inputSource": "父版本代码语义及提交说明或差异内的维护者决定，以中文译述。",
+    "rationaleExcerpt": "Set explicitly n_init to 'auto' in KMeans call in core/sampling/main/utils.py to avoid warning",
+    "rationaleLocation": "提交说明",
+    "observedChange": "实际上游显式写入 auto。",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://github.com/bgproutes-io/forged_origin_hijacks_detection/blob/09414d15508dd73a3b71c484c57794a6aeacf173/LICENSE",
+    "copyrightHeaders": []
+  },
+  {
+    "id": "p04",
+    "repo": "NVIDIA/cuml",
+    "commit": "4f3e897038777460cfce572e29bfb437491a0187",
+    "parent": "2e12d5bc6c88a51680fc307b67d535a78578406a",
+    "path": "python/cuml/cuml/tests/test_kmeans.py",
+    "lines": [
+      114,
+      131
+    ],
+    "parentPermalink": "https://github.com/NVIDIA/cuml/blob/2e12d5bc6c88a51680fc307b67d535a78578406a/python/cuml/cuml/tests/test_kmeans.py#L114-L131",
+    "commitUrl": "https://github.com/NVIDIA/cuml/commit/4f3e897038777460cfce572e29bfb437491a0187",
+    "commitDate": "2025-05-14T19:52:26Z",
+    "inputMode": "documented_decision_replay",
+    "inputSource": "父版本代码语义及提交说明或差异内的维护者决定，以中文译述。",
+    "rationaleExcerpt": "Set scikit-learn KMeans n_init=10 to match cuML",
+    "rationaleLocation": "提交说明",
+    "observedChange": "scikit-learn 的两个测试构造器均由 1 改成 10。",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/NVIDIA/cuml/blob/2e12d5bc6c88a51680fc307b67d535a78578406a/LICENSE",
+    "copyrightHeaders": [
+      "# Copyright (c) 2019-2025, NVIDIA CORPORATION."
+    ]
+  },
+  {
+    "id": "p05",
+    "repo": "ZhiningLiu1998/imbalanced-ensemble",
+    "commit": "0e49844c1776655e2e4ac91f7eb9d6bc2c9b3210",
+    "parent": "d18d0326ecb98f00a426c3b02b99a0e540518fd4",
+    "path": "imbalanced_ensemble/sampler/under_sampling/_prototype_generation/_cluster_centroids.py",
+    "lines": [
+      122,
+      127
+    ],
+    "parentPermalink": "https://github.com/ZhiningLiu1998/imbalanced-ensemble/blob/d18d0326ecb98f00a426c3b02b99a0e540518fd4/imbalanced_ensemble/sampler/under_sampling/_prototype_generation/_cluster_centroids.py#L122-L127",
+    "commitUrl": "https://github.com/ZhiningLiu1998/imbalanced-ensemble/commit/0e49844c1776655e2e4ac91f7eb9d6bc2c9b3210",
+    "commitDate": "2023-02-08T23:54:35Z",
+    "inputMode": "parent_only",
+    "inputSource": "仅父版本函数语义。提交说明及改动没有提供给系统。",
+    "rationaleExcerpt": "MNT handle sklearn KMeans FutureWarining on n_init",
+    "rationaleLocation": "提交说明",
+    "observedChange": "为默认估计器指定 auto；提交标题只称处理未来版本警告。",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/ZhiningLiu1998/imbalanced-ensemble/blob/d18d0326ecb98f00a426c3b02b99a0e540518fd4/LICENSE",
+    "copyrightHeaders": [
+      "# Adapted from imbalanced-learn",
+      "# Authors: Guillaume Lemaitre <g.lemaitre58@gmail.com>",
+      "#          Fernando Nogueira",
+      "#          Christos Aridas",
+      "#          Zhining Liu <zhining.liu@outlook.com>",
+      "# License: MIT"
+    ]
+  },
+  {
+    "id": "p06",
+    "repo": "shap/shap",
+    "commit": "d6504569694125d7e2678464714654d6066cd746",
+    "parent": "5a84521681ee400a7bf5aba2a96b3ee7cf98ee34",
+    "path": "shap/utils/_legacy.py",
+    "lines": [
+      37,
+      42
+    ],
+    "parentPermalink": "https://github.com/shap/shap/blob/5a84521681ee400a7bf5aba2a96b3ee7cf98ee34/shap/utils/_legacy.py#L37-L42",
+    "commitUrl": "https://github.com/shap/shap/commit/d6504569694125d7e2678464714654d6066cd746",
+    "commitDate": "2023-07-16T09:28:33Z",
+    "inputMode": "documented_decision_replay",
+    "inputSource": "父版本代码语义及提交说明或差异内的维护者决定，以中文译述。",
+    "rationaleExcerpt": "Specify `n_init` for consistent behaviour between sklearn versions",
+    "rationaleLocation": "提交补丁中的新增注释",
+    "observedChange": "最终合并的代码选用 10。",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/shap/shap/blob/5a84521681ee400a7bf5aba2a96b3ee7cf98ee34/LICENSE",
+    "copyrightHeaders": []
+  },
+  {
+    "id": "p07",
+    "repo": "wildboar-foundation/wildboar",
+    "commit": "350fc306bdb84940915c7c7fcdbb5b978eb0a94c",
+    "parent": "06836424b0a38fa296593101378f21d5b54a6c3f",
+    "path": "src/wildboar/explain/counterfactual/_nn.py",
+    "lines": [
+      58,
+      63
+    ],
+    "parentPermalink": "https://github.com/wildboar-foundation/wildboar/blob/06836424b0a38fa296593101378f21d5b54a6c3f/src/wildboar/explain/counterfactual/_nn.py#L58-L63",
+    "commitUrl": "https://github.com/wildboar-foundation/wildboar/commit/350fc306bdb84940915c7c7fcdbb5b978eb0a94c",
+    "commitDate": "2023-09-01T10:08:31Z",
+    "inputMode": "documented_decision_replay",
+    "inputSource": "父版本代码语义及提交说明或差异内的维护者决定，以中文译述。",
+    "rationaleExcerpt": "TODO(1.4): Change n_init to \"auto\"",
+    "rationaleLocation": "提交补丁中的新增注释",
+    "observedChange": "项目当时先指定 10 来消除警告，并在代码中留下到 1.4 切换 auto 的待办。此记录评估该待办的目标，不声称待办后来已落地。",
+    "license": "BSD-3-Clause",
+    "licenseUrl": "https://github.com/wildboar-foundation/wildboar/blob/06836424b0a38fa296593101378f21d5b54a6c3f/LICENSE",
+    "copyrightHeaders": [
+      "# Authors: Isak Samsten",
+      "# License: BSD 3 clause"
+    ]
+  }
+]

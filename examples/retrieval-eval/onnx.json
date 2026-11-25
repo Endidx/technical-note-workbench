@@ -1,0 +1,994 @@
+{
+  "chunks": 31,
+  "documentContentSha256": {
+    "01-config.md": "b6cdeffc4b11202c91c5d439ffb94f4e0f678a3f801821070a0f97eddbb14809",
+    "02-clustering.md": "3d8b6eb45cb6ec237c2333546035f3aa3928c8dfdf45f4dc3e10f631eb2d3dd9",
+    "02-explicit.md": "0ca4d436995decc3328f06a0a45505234139e04a3e58a9dcf14636ceaf15558e",
+    "03-archive.md": "de613dc97b7e1a08996bcb7b028b89a2246cd9075563d32bc519e7e3bb0ff3f7",
+    "03-features.md": "41369e6a9c4ba18b54b4d6330f8b814b197ba957eeccd6a6a535384fbd2ae425",
+    "04-ready.md": "017943f38f765ebaf9347694102a92317577913871c80977ff731bf5c0fb0900",
+    "05-stats.md": "94756187b47bda2a66999de520b840abc7e743aca3f612fe948603b7986b3c87",
+    "access-clock.md": "78633b3bcd135e54b3cf80c9f7dc60f14dd1a868cc16510ad73c421536118ccb",
+    "bookkeeping.md": "3913049279a8a629e0650637903b357bb30746d1ebb9b217a952422da5cf5552",
+    "chart-timeout.md": "901ca4ac953ab58650e000a7fb2274cf83842b702bbb73ddabd2a6bd92a8cfd7",
+    "f06.md": "0dcd5e65fe2c6a11c675eb18f24282f9a042b2a17c50117480a373cfdec1b1ea",
+    "feed-new.md": "02a18dc8f49a0d40abe1dda72e990e34559c2f63ac04ef3d3e439ef406aefc2d",
+    "font-assets.md": "28c1889567c063fc6b0c561ec8dfde1013a70c4d0f5254545a66507060282225",
+    "k05.md": "4d565f8d1b61eda0d8b34813f69ca18b9fbee014d4174157b7b993518dc04546",
+    "ledger-client.md": "4beb9d6865ec49eb8eedf8be677d357f05520cbf6f3eff161aafb4133aa95618",
+    "p01.md": "e93b205559c460a638ea6bdc4099ba9b00e3baa7c1330d6f3d116c1558fd9647",
+    "p02.md": "d1991b0cc63f2f99648f04af434708aef78774a5551f418dde0a867e87857cb8",
+    "p06.md": "3cf2149ada982cb020bac7e4a59e671b8cd33c0d8d0dc0d12771e9626849cbbb",
+    "panel-monitor.md": "1f915d404ef0e842c892d496c902ebaaedc9f4ea189623be34a9575c878f68c6",
+    "partner-feed.md": "480d5b302c608208861365219e3c332a609f47f14b46b511f8d215334760f657",
+    "photo-album.md": "5e86940614585a47bad4dc08ca2e5a6f2a7dab052b2aff2e6547d0281d6600e4",
+    "pricing-review.md": "42c21ddb3628cccc28e52b38d7a44ccc87116e6ebcd23f76b98d8261452d995d",
+    "render-farm.md": "ae289c4097930f271543aaf2fd703591e1fface1196d7a146cdaeee55c9078a4",
+    "station-feed.md": "24bb1bd3bd511c44f9b6c860d8fa5f6c82424d59f510b15511e1d1c01ab56dec",
+    "upload-client.md": "23862c129c918c1e7d3b16f67864682fd61aeace78cea7e219dba3a4739a6a36",
+    "upload-duty.md": "4d42bbdb1624a6a5d4c9792c5b5cadbc82fa73d49ce07631d31cd127ecfefa5f",
+    "wayfinding.md": "d6d58091c57962314b4f9087c115fe95b796b67443588ec110afbaab57478f0f"
+  },
+  "documents": 27,
+  "encoder": "multilingual-minilm-l12:2c4055b12046f11709e9df2c122e59ffbdc2f900:int8-mean128-v1",
+  "inputsSha256": {
+    "corpus.json": "995deb7283f22af10ca04404d98eaf5dafbf731420b882394ef36262b27812ca",
+    "queries.json": "804dc264b88946a6816a9cc5c8e8442881367ea9d5db35c189658887065ec490"
+  },
+  "modes": {
+    "bm25": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "02-explicit.md",
+            "f06.md",
+            "02-clustering.md",
+            "03-archive.md",
+            "p01.md",
+            "p02.md",
+            "p06.md",
+            "k05.md"
+          ],
+          "rankMs": [
+            0.135792,
+            0.132209,
+            0.143291,
+            0.150958,
+            0.184333,
+            0.103583,
+            0.160667,
+            0.145125,
+            0.127333,
+            0.119875
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md",
+            "03-features.md",
+            "01-config.md"
+          ],
+          "rankMs": [
+            0.156833,
+            0.157667,
+            0.24175,
+            0.276375,
+            0.180291,
+            0.14775,
+            0.165209,
+            0.12725,
+            0.139,
+            0.171083
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.1125,
+            0.138917,
+            0.143583,
+            0.162042,
+            0.119042,
+            0.112459,
+            0.155167,
+            0.117833,
+            0.156,
+            0.154042
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.107458,
+            0.118875,
+            0.145291,
+            0.151625,
+            0.16475,
+            0.106541,
+            0.13925,
+            0.137125,
+            0.114583,
+            0.142
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md"
+          ],
+          "rankMs": [
+            0.116542,
+            0.115458,
+            0.156166,
+            0.315042,
+            0.150458,
+            0.110083,
+            0.119584,
+            0.114916,
+            0.118833,
+            0.152
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "ledger-client.md",
+            "05-stats.md"
+          ],
+          "rankMs": [
+            0.123166,
+            0.141334,
+            0.113125,
+            0.154459,
+            0.149333,
+            0.119416,
+            0.133791,
+            0.135708,
+            0.126041,
+            0.144125
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        },
+        "no-impact-encoder-display": {
+          "documents": [
+            "04-ready.md",
+            "01-config.md",
+            "03-features.md"
+          ],
+          "rankMs": [
+            0.112542,
+            0.15575,
+            0.159167,
+            0.159792,
+            0.156167,
+            0.120541,
+            0.113833,
+            0.1515,
+            0.128667,
+            0.135208
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            0.109208,
+            0.132916,
+            0.150625,
+            0.2135,
+            0.129833,
+            0.132875,
+            0.153666,
+            0.112833,
+            0.146834,
+            0.117375
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            0.105417,
+            0.134917,
+            0.268041,
+            0.162041,
+            0.142166,
+            0.111625,
+            0.155125,
+            0.158375,
+            0.12775,
+            0.13875
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [
+            "font-assets.md"
+          ],
+          "rankMs": [
+            0.116,
+            0.127375,
+            0.163583,
+            0.162042,
+            0.157917,
+            0.135209,
+            0.147,
+            0.160375,
+            0.148833,
+            0.169042
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "panel-monitor.md"
+          ],
+          "rankMs": [
+            0.116875,
+            0.149875,
+            0.162333,
+            0.127959,
+            0.168042,
+            0.114333,
+            0.121,
+            0.1515,
+            0.169084,
+            0.158667
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 3,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 1,
+        "mrr": 0.6296296296296297,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 0.184333,
+        "recallAt5": 0.7111111111111111
+      }
+    },
+    "hybrid": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "02-explicit.md",
+            "f06.md",
+            "02-clustering.md",
+            "03-archive.md",
+            "p01.md",
+            "p02.md",
+            "p06.md",
+            "k05.md"
+          ],
+          "rankMs": [
+            13.695458,
+            14.915167,
+            15.54725,
+            14.995416,
+            21.268625,
+            14.8905,
+            14.77825,
+            15.785708,
+            15.022875,
+            14.461167
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md",
+            "03-features.md",
+            "01-config.md"
+          ],
+          "rankMs": [
+            17.551292,
+            19.93325,
+            19.743959,
+            19.142625,
+            25.135,
+            19.348417,
+            19.162459,
+            19.934916,
+            18.721625,
+            18.91175
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "station-feed.md",
+            "partner-feed.md"
+          ],
+          "rankMs": [
+            16.763917,
+            18.034708,
+            18.012208,
+            24.995667,
+            24.74875,
+            17.871833,
+            18.914792,
+            18.786084,
+            18.33325,
+            17.921
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            18.488209,
+            19.017209,
+            18.797916,
+            19.239958,
+            26.010084,
+            17.55475,
+            20.247958,
+            18.899542,
+            19.38025,
+            19.624166
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md"
+          ],
+          "rankMs": [
+            10.630791,
+            11.555167,
+            11.827625,
+            17.187542,
+            13.858917,
+            10.514917,
+            11.433291,
+            12.355834,
+            11.0845,
+            11.945542
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "ledger-client.md",
+            "photo-album.md",
+            "05-stats.md"
+          ],
+          "rankMs": [
+            17.57125,
+            20.694958,
+            18.802833,
+            30.211375,
+            26.334458,
+            17.470292,
+            19.290292,
+            18.844375,
+            18.792458,
+            18.751625
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        },
+        "no-impact-encoder-display": {
+          "documents": [
+            "04-ready.md",
+            "01-config.md",
+            "03-features.md"
+          ],
+          "rankMs": [
+            13.753667,
+            16.362667,
+            15.668167,
+            23.472125,
+            25.522542,
+            13.920583,
+            16.213917,
+            15.560625,
+            14.976875,
+            15.273417
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            12.737459,
+            13.638625,
+            13.775334,
+            16.831083,
+            14.08725,
+            12.695209,
+            14.114208,
+            13.98025,
+            14.823291,
+            13.960833
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            12.182667,
+            13.40925,
+            14.508042,
+            13.246375,
+            19.02825,
+            11.815834,
+            13.016416,
+            13.586291,
+            12.706292,
+            13.290333
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [
+            "font-assets.md",
+            "wayfinding.md"
+          ],
+          "rankMs": [
+            13.981375,
+            15.563083,
+            15.029875,
+            18.222375,
+            15.428083,
+            13.733458,
+            16.556625,
+            15.209625,
+            16.153,
+            14.706875
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "panel-monitor.md",
+            "upload-duty.md"
+          ],
+          "rankMs": [
+            13.283292,
+            14.882375,
+            15.013167,
+            17.904,
+            17.495833,
+            14.518375,
+            14.668541,
+            14.494375,
+            15.203459,
+            14.65075
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 3,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 1,
+        "mrr": 0.6666666666666666,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 24.995667,
+        "recallAt5": 0.8777777777777778
+      }
+    },
+    "hybridAst": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "f06.md",
+            "02-explicit.md",
+            "02-clustering.md",
+            "03-archive.md",
+            "p01.md",
+            "p02.md",
+            "p06.md",
+            "k05.md"
+          ],
+          "rankMs": [
+            14.174,
+            15.23225,
+            15.354375,
+            22.847291,
+            18.779958,
+            14.36825,
+            15.47475,
+            16.306333,
+            14.54075,
+            15.143917
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md",
+            "03-features.md",
+            "01-config.md"
+          ],
+          "rankMs": [
+            17.951792,
+            19.291292,
+            20.104417,
+            19.231125,
+            19.00675,
+            17.7395,
+            19.107791,
+            19.112625,
+            19.111167,
+            19.421167
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "station-feed.md",
+            "partner-feed.md"
+          ],
+          "rankMs": [
+            16.868875,
+            18.609208,
+            18.309416,
+            31.850292,
+            19.644125,
+            16.825625,
+            18.137208,
+            19.484375,
+            18.253875,
+            17.868708
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            17.532375,
+            18.799709,
+            19.578708,
+            19.021208,
+            25.938542,
+            17.849833,
+            19.167375,
+            18.751125,
+            19.307167,
+            18.500167
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md"
+          ],
+          "rankMs": [
+            11.526917,
+            11.407625,
+            11.420334,
+            17.123042,
+            16.040958,
+            10.568917,
+            11.404042,
+            11.969458,
+            11.867833,
+            11.269333
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "ledger-client.md",
+            "photo-album.md",
+            "05-stats.md"
+          ],
+          "rankMs": [
+            17.545542,
+            19.817209,
+            19.063792,
+            24.608708,
+            18.743209,
+            19.984125,
+            20.441125,
+            19.75475,
+            19.08025,
+            18.972708
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        },
+        "no-impact-encoder-display": {
+          "documents": [
+            "04-ready.md",
+            "01-config.md",
+            "03-features.md"
+          ],
+          "rankMs": [
+            16.277458,
+            15.240125,
+            14.89125,
+            26.510417,
+            19.977833,
+            13.783875,
+            17.475833,
+            15.250958,
+            15.120958,
+            14.906125
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            12.783959,
+            14.204834,
+            13.713583,
+            14.345625,
+            14.165666,
+            13.328084,
+            15.699125,
+            13.772375,
+            13.383917,
+            13.550042
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            11.808708,
+            13.205333,
+            13.422709,
+            16.212083,
+            21.44575,
+            11.848791,
+            13.109625,
+            12.858167,
+            13.032834,
+            13.122459
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [
+            "font-assets.md",
+            "wayfinding.md"
+          ],
+          "rankMs": [
+            13.716709,
+            15.07425,
+            14.882834,
+            21.374208,
+            16.692667,
+            13.934625,
+            15.313834,
+            15.043917,
+            15.322291,
+            16.207292
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "panel-monitor.md",
+            "upload-duty.md"
+          ],
+          "rankMs": [
+            13.280083,
+            14.715958,
+            14.948834,
+            24.935708,
+            14.986,
+            13.267792,
+            15.406667,
+            14.574916,
+            14.502375,
+            15.232416
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 3,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 1,
+        "mrr": 0.6666666666666666,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 22.847291,
+        "recallAt5": 0.8777777777777778
+      }
+    },
+    "vector": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "f06.md",
+            "02-explicit.md"
+          ],
+          "rankMs": [
+            13.761666,
+            17.667125,
+            15.204916,
+            15.373458,
+            22.576292,
+            13.82875,
+            17.296625,
+            16.190958,
+            15.151333,
+            15.392416
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "encoder-rename": {
+          "documents": [],
+          "rankMs": [
+            17.542834,
+            19.164375,
+            19.228125,
+            33.144416,
+            18.397208,
+            17.587083,
+            19.332375,
+            19.174708,
+            19.433375,
+            19.118958
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "feed-charset": {
+          "documents": [
+            "station-feed.md",
+            "feed-new.md",
+            "partner-feed.md"
+          ],
+          "rankMs": [
+            16.706125,
+            18.466667,
+            18.062042,
+            24.444291,
+            26.642584,
+            17.874792,
+            18.209709,
+            18.465625,
+            18.63975,
+            17.913125
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "feed-separator": {
+          "documents": [],
+          "rankMs": [
+            17.504583,
+            19.486084,
+            19.7715,
+            23.454333,
+            18.848333,
+            17.524208,
+            19.544084,
+            18.752,
+            19.298875,
+            18.39925
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md"
+          ],
+          "rankMs": [
+            10.493125,
+            11.516584,
+            11.680625,
+            16.963667,
+            20.095333,
+            10.539792,
+            12.044833,
+            12.143083,
+            11.095417,
+            11.465542
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "photo-album.md"
+          ],
+          "rankMs": [
+            20.201708,
+            21.147958,
+            19.452417,
+            24.893708,
+            27.310833,
+            18.606166,
+            19.085,
+            19.308625,
+            20.633083,
+            18.444167
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "no-impact-encoder-display": {
+          "documents": [],
+          "rankMs": [
+            14.461625,
+            14.883833,
+            15.373625,
+            21.761709,
+            15.193834,
+            14.1225,
+            15.017709,
+            14.847375,
+            14.753625,
+            15.141708
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            12.713708,
+            14.884625,
+            13.861542,
+            23.328,
+            19.435,
+            15.411125,
+            13.620666,
+            13.786792,
+            14.700667,
+            14.2035
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [],
+          "rankMs": [
+            11.777792,
+            12.9375,
+            12.766041,
+            20.587875,
+            15.965125,
+            13.110125,
+            14.339792,
+            13.472833,
+            12.519958,
+            13.099625
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "screen-layout": {
+          "documents": [
+            "wayfinding.md"
+          ],
+          "rankMs": [
+            13.722292,
+            15.720333,
+            15.0205,
+            24.41525,
+            16.308083,
+            14.055209,
+            14.934667,
+            14.88025,
+            14.519375,
+            14.983375
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "upload-duty.md"
+          ],
+          "rankMs": [
+            13.2635,
+            14.692667,
+            14.814875,
+            14.750041,
+            25.079459,
+            13.347875,
+            15.816792,
+            14.525625,
+            14.243625,
+            14.658292
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 0,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 0,
+        "mrr": 0.37037037037037035,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 24.444291,
+        "recallAt5": 0.4444444444444444
+      }
+    }
+  },
+  "packages": {
+    "numpy": "2.5.5",
+    "onnxruntime": "1.22.1",
+    "tokenizers": "0.21.4"
+  },
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "protocol": 1,
+  "python": "3.12.14",
+  "queries": 11,
+  "repeats": 10,
+  "scheduleSeed": 20261124,
+  "vectorBackend": "local",
+  "warmupPerModeQuery": 1
+}

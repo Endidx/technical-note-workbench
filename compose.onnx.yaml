@@ -1,0 +1,10 @@
+services:
+  analyzer:
+    build:
+      args:
+        LIBRARY_ONNX: 1
+    environment:
+      LIBRARY_ENCODER: onnx
+      LIBRARY_MODEL_DIR: /models/multilingual-minilm
+    volumes:
+      - ./.runtime/library-model:/models/multilingual-minilm:ro

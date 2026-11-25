@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01-baseline",
+    "title": "聚类基线复现",
+    "filename": "01-baseline.md",
+    "original": "# 聚类基线复现\n\n为了和上一轮结果公平比较，升级后仍需保留 10 次初始化。\n\n```python\nfrom sklearn.cluster import KMeans\n\nmodel = KMeans(n_clusters=8, random_state=42)\n```\n",
+    "proposed": "# 聚类基线复现\n\n为了和上一轮结果公平比较，升级后仍需保留 10 次初始化。\n\n```python\nfrom sklearn.cluster import KMeans\n\nmodel = KMeans(n_clusters=8, random_state=42, n_init=10)\n```\n",
+    "kind": "change",
+    "reason": "调用省略了 n_init 和 init。升级后默认从 10 次变为 1 次，与笔记要求保留 10 次的意图冲突。",
+    "evidence": "为了和上一轮结果公平比较，升级后仍需保留 10 次初始化。"
+  },
+  {
+    "id": "02-explicit",
+    "title": "用户分群流水线",
+    "filename": "02-explicit.md",
+    "original": "# 用户分群流水线\n\n每周重跑一次客户分群，固定参数以便比较不同批次。\n\n```python\nfrom sklearn.cluster import KMeans\n\nmodel = KMeans(n_clusters=5, n_init=10, random_state=7)\n```\n",
+    "proposed": null,
+    "kind": "explicit",
+    "reason": "调用已显式设置 n_init，本次默认值变更不会覆盖这个参数。",
+    "evidence": "KMeans(n_clusters=5, n_init=10, random_state=7)"
+  },
+  {
+    "id": "03-archive",
+    "title": "旧版实验记录",
+    "filename": "03-archive.md",
+    "original": "# 旧版实验记录\n\n历史记录：以下代码仅记录 scikit-learn 1.1.3 环境下的运行情况。\n\n当时省略初始化次数，训练使用了 10 次初始化。\n\n```python\nfrom sklearn.cluster import KMeans\n\nmodel = KMeans(n_clusters=3, random_state=17)\n```\n",
+    "proposed": null,
+    "kind": "history",
+    "reason": "这段文字记载的是 1.1.3 的既有实验，当时默认执行 10 次初始化。修改示例会改变历史记录。",
+    "evidence": "历史记录：以下代码仅记录 scikit-learn 1.1.3 环境下的运行情况。"
+  },
+  {
+    "id": "04-exploration",
+    "title": "主题探索草稿",
+    "filename": "04-exploration.md",
+    "original": "# 主题探索草稿\n\n初步尝试把文本分为六组，后续再比较聚类结果。\n\n```python\nfrom sklearn.cluster import KMeans\n\nmodel = KMeans(n_clusters=6, random_state=9)\n```\n",
+    "proposed": "# 主题探索草稿\n\n初步尝试把文本分为六组，后续再比较聚类结果。\n\n```python\nfrom sklearn.cluster import KMeans\n\nmodel = KMeans(n_clusters=6, random_state=9, n_init=10)\n```\n",
+    "kind": "confirm",
+    "reason": "在 1.4 中，此调用默认只运行 1 次。笔记没有指定次数；请确认要保留旧版 10 次，还是沿用新版默认。",
+    "evidence": "KMeans(n_clusters=6, random_state=9)"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "project": "piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator",
+    "commit": "https://github.com/piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator/commit/a834a2c6a823756a32d29decfe9224549892a407",
+    "before": "https://github.com/piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator/blob/e58662285cc36fc679b8442bc1f2c67aac4e6a4b/data_preprocess.py#L108",
+    "after": "https://github.com/piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator/blob/a834a2c6a823756a32d29decfe9224549892a407/data_preprocess.py#L108",
+    "keywords": [
+      [
+        "sparse",
+        "False"
+      ],
+      [
+        "handle_unknown",
+        "'ignore'"
+      ]
+    ]
+  },
+  {
+    "project": "multivacs/employee-churn-prediction",
+    "commit": "https://github.com/multivacs/employee-churn-prediction/commit/88d878353fc0eaaf0cdf181511de221a6518ad91",
+    "before": "https://github.com/multivacs/employee-churn-prediction/blob/3b05101deb834e83156881e3a6e4b69e2bea6481/src/features/prepare_features.py#L12",
+    "after": "https://github.com/multivacs/employee-churn-prediction/blob/88d878353fc0eaaf0cdf181511de221a6518ad91/src/features/prepare_features.py#L12",
+    "keywords": [
+      [
+        "sparse",
+        "False"
+      ],
+      [
+        "drop",
+        "'first'"
+      ]
+    ]
+  },
+  {
+    "project": "XplorodoX/DeepLearningExe",
+    "commit": "https://github.com/XplorodoX/DeepLearningExe/commit/88ace479548b21dc5bffe758ec4341c816ea4c5f",
+    "before": "https://github.com/XplorodoX/DeepLearningExe/blob/024f69a25d1432b5baef9faa4514a417544b08c8/exercise1_material/src_to_implement/Layers/Helpers.py#L139",
+    "after": "https://github.com/XplorodoX/DeepLearningExe/blob/88ace479548b21dc5bffe758ec4341c816ea4c5f/exercise1_material/src_to_implement/Layers/Helpers.py#L139",
+    "keywords": [
+      [
+        "sparse",
+        "False"
+      ]
+    ]
+  },
+  {
+    "project": "akash0123-pathak/streamlit_streetlight_app",
+    "commit": "https://github.com/akash0123-pathak/streamlit_streetlight_app/commit/9de55dcdb928c1de2d43647572b00a625b192fa1",
+    "before": "https://github.com/akash0123-pathak/streamlit_streetlight_app/blob/ba0088cf49c388a12cf62d6edcb6d93d3127e78b/streamlit_streetlight_app.py#L193",
+    "after": "https://github.com/akash0123-pathak/streamlit_streetlight_app/blob/9de55dcdb928c1de2d43647572b00a625b192fa1/streamlit_streetlight_app.py#L193",
+    "keywords": [
+      [
+        "handle_unknown",
+        "'ignore'"
+      ],
+      [
+        "sparse",
+        "False"
+      ]
+    ]
+  },
+  {
+    "project": "rushikeshdhumal/gaming-churn-prediction",
+    "commit": "https://github.com/rushikeshdhumal/gaming-churn-prediction/commit/e552e0edb292e0a01d461270a507fdf1b480eaa5",
+    "before": "https://github.com/rushikeshdhumal/gaming-churn-prediction/blob/7fb03ca570288f7c5583ff5578488aa690d9f835/src/features/feature_engineering.py#L368",
+    "after": "https://github.com/rushikeshdhumal/gaming-churn-prediction/blob/e552e0edb292e0a01d461270a507fdf1b480eaa5/src/features/feature_engineering.py#L368",
+    "keywords": [
+      [
+        "sparse",
+        "False"
+      ],
+      [
+        "handle_unknown",
+        "'ignore'"
+      ]
+    ]
+  },
+  {
+    "project": "py-why/dowhy",
+    "commit": "https://github.com/py-why/dowhy/commit/35408a1e9485f1624ae9b23dc1d5c722bd00b2cc",
+    "before": "https://github.com/py-why/dowhy/blob/6a9a229bb5094468a96b4b8d058d4f8a2249d25e/dowhy/causal_refuters/overrule/BCS/load_process_data_BCS.py#L102",
+    "after": "https://github.com/py-why/dowhy/blob/35408a1e9485f1624ae9b23dc1d5c722bd00b2cc/dowhy/causal_refuters/overrule/BCS/load_process_data_BCS.py#L102",
+    "keywords": [
+      [
+        "sparse",
+        "False"
+      ],
+      [
+        "dtype",
+        "int"
+      ],
+      [
+        "handle_unknown",
+        "'ignore'"
+      ]
+    ]
+  }
+]

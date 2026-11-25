@@ -1,0 +1,138 @@
+{
+  "casesSha256": "fee7405bf2487420d11d202c26bc937b0caa43fd29dd7570b7824a16eada9373",
+  "batchNoteSha256": "ab203afe5de0fe82b6d40c7024461970bef8a955e2ae5d7cdfee7e4ca1b88a43",
+  "total": 14,
+  "correct": 14,
+  "correctStatuses": 14,
+  "expectedEdits": 4,
+  "exactEdits": 4,
+  "incorrectProposals": 0,
+  "rows": [
+    {
+      "id": "computed-value",
+      "expected": "edit",
+      "actual": "edit",
+      "proposed": true,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "inline-literal",
+      "expected": "edit",
+      "actual": "edit",
+      "proposed": true,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "function-local",
+      "expected": "edit",
+      "actual": "edit",
+      "proposed": true,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "direct-with-clean-options",
+      "expected": "edit",
+      "actual": "edit",
+      "proposed": true,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "updated-config",
+      "expected": "keep",
+      "actual": "keep",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "no-output-key",
+      "expected": "keep",
+      "actual": "keep",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "shared-reader",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "mutated",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "conditional-binding",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "duplicate-new",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "dynamic-key",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "merged",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "external",
+      "expected": "ask",
+      "actual": "ask",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    },
+    {
+      "id": "independent-estimator",
+      "expected": "irrelevant",
+      "actual": "irrelevant",
+      "proposed": false,
+      "exactProposal": true,
+      "questionMatches": true,
+      "correct": true
+    }
+  ]
+}

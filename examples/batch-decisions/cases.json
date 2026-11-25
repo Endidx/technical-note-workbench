@@ -1,0 +1,108 @@
+[
+  {
+    "id": "computed-value",
+    "expected": "edit",
+    "note": "# computed-value\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder as Encoder\n输出配置 = {\n    'handle_unknown': 'ignore',\n    \"sparse\" : len(columns) > 64,  # sparse threshold\n}\nencoder = Encoder(**输出配置)\n```\n",
+    "old": "\"sparse\"",
+    "replacement": "\"sparse_output\""
+  },
+  {
+    "id": "inline-literal",
+    "expected": "edit",
+    "note": "# inline-literal\n\n```python\nimport sklearn.preprocessing as p\nencoder = p.OneHotEncoder(**{'sparse': policy.outputs_sparse(), 'drop': None})\n```\n",
+    "old": "'sparse'",
+    "replacement": "'sparse_output'"
+  },
+  {
+    "id": "function-local",
+    "expected": "edit",
+    "note": "# function-local\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder as E\ndef categorical_encoder(width):\n    options = {'sparse': width > 30}\n    return E(**options)\n```\n",
+    "old": "'sparse'",
+    "replacement": "'sparse_output'"
+  },
+  {
+    "id": "direct-with-clean-options",
+    "expected": "edit",
+    "note": "# direct-with-clean-options\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {'drop': 'first'}\nencoder = OneHotEncoder(sparse=flags.compact, **options)\n```\n",
+    "old": "sparse=",
+    "replacement": "sparse_output="
+  },
+  {
+    "id": "updated-config",
+    "expected": "keep",
+    "note": "# updated-config\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {'sparse_output': flags.compact}\nmodel = OneHotEncoder(**options)\n```\n"
+  },
+  {
+    "id": "no-output-key",
+    "expected": "keep",
+    "note": "# no-output-key\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\nencoder = OneHotEncoder(**{'handle_unknown': 'ignore'})\n```\n"
+  },
+  {
+    "id": "shared-reader",
+    "expected": "ask",
+    "note": "# shared-reader\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {'sparse': flags.compact}\nencoder = OneHotEncoder(**options)\nwrite_training_manifest(options)\n```\n",
+    "questionIncludes": [
+      "options",
+      "共享"
+    ]
+  },
+  {
+    "id": "mutated",
+    "expected": "ask",
+    "note": "# mutated\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {'sparse': True}\noptions.update(overrides)\nencoder = OneHotEncoder(**options)\n```\n",
+    "questionIncludes": [
+      "options",
+      "共享"
+    ]
+  },
+  {
+    "id": "conditional-binding",
+    "expected": "ask",
+    "note": "# conditional-binding\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\nif export:\n    options = {'sparse': False}\nencoder = OneHotEncoder(**options)\n```\n",
+    "questionIncludes": [
+      "options",
+      "sparse"
+    ]
+  },
+  {
+    "id": "duplicate-new",
+    "expected": "ask",
+    "note": "# duplicate-new\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {'sparse': False, 'sparse_output': True}\nencoder = OneHotEncoder(**options)\n```\n",
+    "questionIncludes": [
+      "sparse",
+      "sparse_output"
+    ]
+  },
+  {
+    "id": "dynamic-key",
+    "expected": "ask",
+    "note": "# dynamic-key\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {output_param: False, 'sparse': False}\nencoder = OneHotEncoder(**options)\n```\n",
+    "questionIncludes": [
+      "options",
+      "sparse"
+    ]
+  },
+  {
+    "id": "merged",
+    "expected": "ask",
+    "note": "# merged\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\noptions = {'sparse': False, **defaults}\nencoder = OneHotEncoder(**options)\n```\n",
+    "questionIncludes": [
+      "options",
+      "sparse"
+    ]
+  },
+  {
+    "id": "external",
+    "expected": "ask",
+    "note": "# external\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\nencoder = OneHotEncoder(**training.encoder_params)\n```\n",
+    "questionIncludes": [
+      "training.encoder_params",
+      "sparse"
+    ]
+  },
+  {
+    "id": "independent-estimator",
+    "expected": "irrelevant",
+    "note": "# independent-estimator\n\n```python\nfrom local_code import OneHotEncoder\noptions = {'sparse': True}\nencoder = OneHotEncoder(**options)\n```\n"
+  }
+]

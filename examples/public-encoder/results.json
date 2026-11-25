@@ -1,0 +1,151 @@
+{
+  "independentProjects": 6,
+  "passed": 12,
+  "total": 12,
+  "rows": [
+    {
+      "project": "piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator",
+      "source": "https://github.com/piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator/blob/e58662285cc36fc679b8442bc1f2c67aac4e6a4b/data_preprocess.py#L108",
+      "expected": "edit",
+      "passed": true,
+      "action": "edit",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse=False, handle_unknown='ignore')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator",
+      "source": "https://github.com/piyushvedwal/Privacy-Preserving-Synthetic-Data-Generator/blob/a834a2c6a823756a32d29decfe9224549892a407/data_preprocess.py#L108",
+      "expected": "keep",
+      "passed": true,
+      "action": "keep",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse_output=False, handle_unknown='ignore')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "multivacs/employee-churn-prediction",
+      "source": "https://github.com/multivacs/employee-churn-prediction/blob/3b05101deb834e83156881e3a6e4b69e2bea6481/src/features/prepare_features.py#L12",
+      "expected": "edit",
+      "passed": true,
+      "action": "edit",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse=False, drop='first')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "multivacs/employee-churn-prediction",
+      "source": "https://github.com/multivacs/employee-churn-prediction/blob/88d878353fc0eaaf0cdf181511de221a6518ad91/src/features/prepare_features.py#L12",
+      "expected": "keep",
+      "passed": true,
+      "action": "keep",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse_output=False, drop='first')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "XplorodoX/DeepLearningExe",
+      "source": "https://github.com/XplorodoX/DeepLearningExe/blob/024f69a25d1432b5baef9faa4514a417544b08c8/exercise1_material/src_to_implement/Layers/Helpers.py#L139",
+      "expected": "edit",
+      "passed": true,
+      "action": "edit",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse=False)",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "XplorodoX/DeepLearningExe",
+      "source": "https://github.com/XplorodoX/DeepLearningExe/blob/88ace479548b21dc5bffe758ec4341c816ea4c5f/exercise1_material/src_to_implement/Layers/Helpers.py#L139",
+      "expected": "keep",
+      "passed": true,
+      "action": "keep",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse_output=False)",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "akash0123-pathak/streamlit_streetlight_app",
+      "source": "https://github.com/akash0123-pathak/streamlit_streetlight_app/blob/ba0088cf49c388a12cf62d6edcb6d93d3127e78b/streamlit_streetlight_app.py#L193",
+      "expected": "edit",
+      "passed": true,
+      "action": "edit",
+      "evidence": [
+        "encoder.md · L7 · Encoder(handle_unknown='ignore', sparse=False)",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "akash0123-pathak/streamlit_streetlight_app",
+      "source": "https://github.com/akash0123-pathak/streamlit_streetlight_app/blob/9de55dcdb928c1de2d43647572b00a625b192fa1/streamlit_streetlight_app.py#L193",
+      "expected": "keep",
+      "passed": true,
+      "action": "keep",
+      "evidence": [
+        "encoder.md · L7 · Encoder(handle_unknown='ignore', sparse_output=False)",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "rushikeshdhumal/gaming-churn-prediction",
+      "source": "https://github.com/rushikeshdhumal/gaming-churn-prediction/blob/7fb03ca570288f7c5583ff5578488aa690d9f835/src/features/feature_engineering.py#L368",
+      "expected": "edit",
+      "passed": true,
+      "action": "edit",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse=False, handle_unknown='ignore')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "rushikeshdhumal/gaming-churn-prediction",
+      "source": "https://github.com/rushikeshdhumal/gaming-churn-prediction/blob/e552e0edb292e0a01d461270a507fdf1b480eaa5/src/features/feature_engineering.py#L368",
+      "expected": "keep",
+      "passed": true,
+      "action": "keep",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse_output=False, handle_unknown='ignore')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "py-why/dowhy",
+      "source": "https://github.com/py-why/dowhy/blob/6a9a229bb5094468a96b4b8d058d4f8a2249d25e/dowhy/causal_refuters/overrule/BCS/load_process_data_BCS.py#L102",
+      "expected": "edit",
+      "passed": true,
+      "action": "edit",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse=False, dtype=int, handle_unknown='ignore')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    },
+    {
+      "project": "py-why/dowhy",
+      "source": "https://github.com/py-why/dowhy/blob/35408a1e9485f1624ae9b23dc1d5c722bd00b2cc/dowhy/causal_refuters/overrule/BCS/load_process_data_BCS.py#L102",
+      "expected": "keep",
+      "passed": true,
+      "action": "keep",
+      "evidence": [
+        "encoder.md · L7 · Encoder(sparse_output=False, dtype=int, handle_unknown='ignore')",
+        "sklearn-1.1.3.md · 1.1.3 · L11 · OneHotEncoder 的 sparse 参数控制稀疏输出，默认值为 True。",
+        "sklearn-1.4.2.md · 1.4.2 · L11 · OneHotEncoder 的 sparse 参数在 1.2 更名为 sparse_output，旧参数在 1.4 移除。将关键字改为 sparse_output，保留原值。"
+      ]
+    }
+  ]
+}

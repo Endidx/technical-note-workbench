@@ -1,0 +1,1007 @@
+{
+  "chunks": 31,
+  "documentContentSha256": {
+    "01-config.md": "b6cdeffc4b11202c91c5d439ffb94f4e0f678a3f801821070a0f97eddbb14809",
+    "02-clustering.md": "3d8b6eb45cb6ec237c2333546035f3aa3928c8dfdf45f4dc3e10f631eb2d3dd9",
+    "02-explicit.md": "0ca4d436995decc3328f06a0a45505234139e04a3e58a9dcf14636ceaf15558e",
+    "03-archive.md": "de613dc97b7e1a08996bcb7b028b89a2246cd9075563d32bc519e7e3bb0ff3f7",
+    "03-features.md": "41369e6a9c4ba18b54b4d6330f8b814b197ba957eeccd6a6a535384fbd2ae425",
+    "04-ready.md": "017943f38f765ebaf9347694102a92317577913871c80977ff731bf5c0fb0900",
+    "05-stats.md": "94756187b47bda2a66999de520b840abc7e743aca3f612fe948603b7986b3c87",
+    "access-clock.md": "78633b3bcd135e54b3cf80c9f7dc60f14dd1a868cc16510ad73c421536118ccb",
+    "bookkeeping.md": "3913049279a8a629e0650637903b357bb30746d1ebb9b217a952422da5cf5552",
+    "chart-timeout.md": "901ca4ac953ab58650e000a7fb2274cf83842b702bbb73ddabd2a6bd92a8cfd7",
+    "f06.md": "0dcd5e65fe2c6a11c675eb18f24282f9a042b2a17c50117480a373cfdec1b1ea",
+    "feed-new.md": "02a18dc8f49a0d40abe1dda72e990e34559c2f63ac04ef3d3e439ef406aefc2d",
+    "font-assets.md": "28c1889567c063fc6b0c561ec8dfde1013a70c4d0f5254545a66507060282225",
+    "k05.md": "4d565f8d1b61eda0d8b34813f69ca18b9fbee014d4174157b7b993518dc04546",
+    "ledger-client.md": "4beb9d6865ec49eb8eedf8be677d357f05520cbf6f3eff161aafb4133aa95618",
+    "p01.md": "e93b205559c460a638ea6bdc4099ba9b00e3baa7c1330d6f3d116c1558fd9647",
+    "p02.md": "d1991b0cc63f2f99648f04af434708aef78774a5551f418dde0a867e87857cb8",
+    "p06.md": "3cf2149ada982cb020bac7e4a59e671b8cd33c0d8d0dc0d12771e9626849cbbb",
+    "panel-monitor.md": "1f915d404ef0e842c892d496c902ebaaedc9f4ea189623be34a9575c878f68c6",
+    "partner-feed.md": "480d5b302c608208861365219e3c332a609f47f14b46b511f8d215334760f657",
+    "photo-album.md": "5e86940614585a47bad4dc08ca2e5a6f2a7dab052b2aff2e6547d0281d6600e4",
+    "pricing-review.md": "42c21ddb3628cccc28e52b38d7a44ccc87116e6ebcd23f76b98d8261452d995d",
+    "render-farm.md": "ae289c4097930f271543aaf2fd703591e1fface1196d7a146cdaeee55c9078a4",
+    "station-feed.md": "24bb1bd3bd511c44f9b6c860d8fa5f6c82424d59f510b15511e1d1c01ab56dec",
+    "upload-client.md": "23862c129c918c1e7d3b16f67864682fd61aeace78cea7e219dba3a4739a6a36",
+    "upload-duty.md": "4d42bbdb1624a6a5d4c9792c5b5cadbc82fa73d49ce07631d31cd127ecfefa5f",
+    "wayfinding.md": "d6d58091c57962314b4f9087c115fe95b796b67443588ec110afbaab57478f0f"
+  },
+  "documents": 27,
+  "encoder": "concept-hash-v1",
+  "inputsSha256": {
+    "corpus.json": "995deb7283f22af10ca04404d98eaf5dafbf731420b882394ef36262b27812ca",
+    "queries.json": "804dc264b88946a6816a9cc5c8e8442881367ea9d5db35c189658887065ec490"
+  },
+  "modes": {
+    "bm25": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "02-explicit.md",
+            "f06.md",
+            "02-clustering.md",
+            "03-archive.md",
+            "p01.md",
+            "p02.md",
+            "p06.md",
+            "k05.md"
+          ],
+          "rankMs": [
+            0.119416,
+            0.09975,
+            0.098042,
+            0.09625,
+            0.094875,
+            0.099125,
+            0.096208,
+            0.095875,
+            0.100667,
+            0.095875
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md",
+            "03-features.md",
+            "01-config.md"
+          ],
+          "rankMs": [
+            0.10775,
+            0.108667,
+            0.115375,
+            0.106458,
+            0.109042,
+            0.108541,
+            0.109417,
+            0.107958,
+            0.111875,
+            0.110167
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.100292,
+            0.10025,
+            0.098833,
+            0.096458,
+            0.093792,
+            0.099875,
+            0.096333,
+            0.1055,
+            0.098708,
+            0.098167
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.096083,
+            0.097542,
+            0.096958,
+            0.096708,
+            0.093958,
+            0.097042,
+            0.098542,
+            0.096708,
+            0.097583,
+            0.09775
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md"
+          ],
+          "rankMs": [
+            0.107375,
+            0.09775,
+            0.10725,
+            0.09725,
+            0.096125,
+            0.100542,
+            0.0965,
+            0.09625,
+            0.095292,
+            0.099875
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "ledger-client.md",
+            "05-stats.md"
+          ],
+          "rankMs": [
+            0.095208,
+            0.094542,
+            0.090708,
+            0.091125,
+            0.09275,
+            0.093542,
+            0.09225,
+            0.091708,
+            0.092333,
+            0.102917
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        },
+        "no-impact-encoder-display": {
+          "documents": [
+            "04-ready.md",
+            "01-config.md",
+            "03-features.md"
+          ],
+          "rankMs": [
+            0.102583,
+            0.101291,
+            0.101375,
+            0.101083,
+            0.099167,
+            0.101083,
+            0.098959,
+            0.122625,
+            0.099208,
+            0.102708
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            0.098334,
+            0.099042,
+            0.105167,
+            0.095875,
+            0.094167,
+            0.102791,
+            0.096459,
+            0.094042,
+            0.104,
+            0.095291
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            0.094834,
+            0.095292,
+            0.099875,
+            0.096125,
+            0.102917,
+            0.097417,
+            0.094333,
+            0.093958,
+            0.096708,
+            0.096125
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [
+            "font-assets.md"
+          ],
+          "rankMs": [
+            0.104583,
+            0.104875,
+            0.105916,
+            0.108792,
+            0.102958,
+            0.110042,
+            0.106334,
+            0.105417,
+            0.10725,
+            0.109042
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "panel-monitor.md"
+          ],
+          "rankMs": [
+            0.101584,
+            0.100125,
+            0.105542,
+            0.0985,
+            0.097666,
+            0.105083,
+            0.100125,
+            0.101917,
+            0.109333,
+            0.103584
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 3,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 1,
+        "mrr": 0.6296296296296297,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 0.110042,
+        "recallAt5": 0.7111111111111111
+      }
+    },
+    "hybrid": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "02-explicit.md",
+            "02-clustering.md",
+            "f06.md",
+            "03-archive.md",
+            "k05.md",
+            "p01.md",
+            "p02.md",
+            "p06.md"
+          ],
+          "rankMs": [
+            0.434791,
+            0.432875,
+            0.441875,
+            0.433875,
+            0.434042,
+            0.434833,
+            0.432542,
+            0.43775,
+            0.445958,
+            0.434958
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.5
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md",
+            "03-features.md",
+            "01-config.md"
+          ],
+          "rankMs": [
+            0.471917,
+            0.466917,
+            0.471917,
+            0.46325,
+            0.461292,
+            0.462792,
+            0.469834,
+            0.457625,
+            0.458916,
+            0.465125
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.446834,
+            0.433583,
+            0.4345,
+            0.436542,
+            0.43,
+            0.434,
+            0.505708,
+            0.433125,
+            0.436584,
+            0.450542
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "station-feed.md",
+            "partner-feed.md"
+          ],
+          "rankMs": [
+            0.436583,
+            0.440917,
+            0.439042,
+            0.436292,
+            0.430042,
+            0.442416,
+            0.437917,
+            0.439375,
+            0.468584,
+            0.47175
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md",
+            "chart-timeout.md"
+          ],
+          "rankMs": [
+            0.443458,
+            0.438833,
+            0.43425,
+            0.436708,
+            0.441542,
+            0.453834,
+            0.436583,
+            0.436125,
+            0.446958,
+            0.442166
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "ledger-client.md",
+            "photo-album.md",
+            "05-stats.md",
+            "bookkeeping.md"
+          ],
+          "rankMs": [
+            0.446792,
+            0.44325,
+            0.430334,
+            0.430584,
+            0.430625,
+            0.4425,
+            0.431333,
+            0.459125,
+            0.432625,
+            0.433542
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "no-impact-encoder-display": {
+          "documents": [
+            "04-ready.md",
+            "01-config.md",
+            "03-features.md"
+          ],
+          "rankMs": [
+            0.443042,
+            0.434041,
+            0.441375,
+            0.443667,
+            0.443167,
+            0.43925,
+            0.446917,
+            0.495041,
+            0.443958,
+            0.445958
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            0.44425,
+            0.431833,
+            0.43575,
+            0.438833,
+            0.437042,
+            0.444416,
+            0.432458,
+            0.44975,
+            0.445834,
+            0.44175
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            0.433125,
+            0.431541,
+            0.43625,
+            0.442209,
+            0.431292,
+            0.454042,
+            0.437959,
+            0.435916,
+            0.446416,
+            0.44525
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [
+            "font-assets.md"
+          ],
+          "rankMs": [
+            0.454,
+            0.468875,
+            0.474375,
+            0.4565,
+            0.456208,
+            0.465375,
+            0.47375,
+            0.46275,
+            0.464583,
+            0.460458
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "panel-monitor.md",
+            "render-farm.md"
+          ],
+          "rankMs": [
+            0.453416,
+            0.451209,
+            0.433625,
+            0.4475,
+            0.508042,
+            0.513042,
+            0.446333,
+            0.512917,
+            0.456,
+            0.462583
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 3,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 1,
+        "mrr": 0.6666666666666666,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 0.474375,
+        "recallAt5": 0.7666666666666667
+      }
+    },
+    "hybridAst": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "02-explicit.md",
+            "f06.md",
+            "02-clustering.md",
+            "03-archive.md",
+            "k05.md",
+            "p01.md",
+            "p02.md",
+            "p06.md"
+          ],
+          "rankMs": [
+            0.453667,
+            0.450834,
+            0.471042,
+            0.454708,
+            0.4595,
+            0.462125,
+            0.450375,
+            0.470834,
+            0.4515,
+            0.453209
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md",
+            "03-features.md",
+            "01-config.md"
+          ],
+          "rankMs": [
+            0.588,
+            0.474083,
+            0.5365,
+            0.476042,
+            0.471958,
+            0.480709,
+            0.472834,
+            0.476625,
+            0.475417,
+            0.485
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.467833,
+            0.449667,
+            0.446,
+            0.449,
+            0.449667,
+            0.45125,
+            0.450208,
+            0.447542,
+            0.450917,
+            0.454916
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "station-feed.md",
+            "partner-feed.md"
+          ],
+          "rankMs": [
+            0.457208,
+            0.468792,
+            0.451334,
+            0.454625,
+            0.454125,
+            0.453917,
+            0.453417,
+            0.460542,
+            0.461084,
+            0.454833
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md",
+            "chart-timeout.md"
+          ],
+          "rankMs": [
+            0.461959,
+            0.453459,
+            0.451583,
+            0.454417,
+            0.44775,
+            0.45475,
+            0.454667,
+            0.451667,
+            0.457667,
+            0.459417
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "ledger-client.md",
+            "photo-album.md",
+            "05-stats.md",
+            "bookkeeping.md"
+          ],
+          "rankMs": [
+            0.487584,
+            0.44825,
+            0.438625,
+            0.439291,
+            0.452166,
+            0.443583,
+            0.444958,
+            0.44425,
+            0.448833,
+            0.445625
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "no-impact-encoder-display": {
+          "documents": [
+            "04-ready.md",
+            "01-config.md",
+            "03-features.md"
+          ],
+          "rankMs": [
+            0.457041,
+            0.462459,
+            0.448167,
+            0.45675,
+            0.455708,
+            0.468417,
+            0.506125,
+            0.459083,
+            0.461,
+            0.466334
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            0.447875,
+            0.475792,
+            0.448875,
+            0.454042,
+            0.450541,
+            0.448584,
+            0.457958,
+            0.45325,
+            0.469333,
+            0.455209
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            0.458583,
+            0.44875,
+            0.44975,
+            0.450208,
+            0.445917,
+            0.468791,
+            0.459166,
+            0.450375,
+            0.454667,
+            0.455416
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [
+            "font-assets.md"
+          ],
+          "rankMs": [
+            0.469833,
+            0.46325,
+            0.493791,
+            0.467625,
+            0.47275,
+            0.474542,
+            0.49275,
+            0.474959,
+            0.475458,
+            0.471958
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "panel-monitor.md",
+            "render-farm.md"
+          ],
+          "rankMs": [
+            0.468,
+            0.454458,
+            0.456792,
+            0.464791,
+            0.466666,
+            0.4695,
+            0.54575,
+            0.45675,
+            0.46175,
+            0.479334
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 3,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 1,
+        "mrr": 0.6481481481481481,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 0.49275,
+        "recallAt5": 0.7666666666666667
+      }
+    },
+    "vector": {
+      "queries": {
+        "cluster-default": {
+          "documents": [
+            "02-explicit.md",
+            "02-clustering.md",
+            "k05.md",
+            "03-archive.md",
+            "f06.md",
+            "p02.md",
+            "p01.md",
+            "p06.md"
+          ],
+          "rankMs": [
+            0.425834,
+            0.4275,
+            0.424333,
+            0.436083,
+            0.425375,
+            0.439959,
+            0.426583,
+            0.421834,
+            0.428291,
+            0.426167
+          ],
+          "recallAt5": 0.4,
+          "reciprocalRank": 0.5
+        },
+        "encoder-rename": {
+          "documents": [
+            "04-ready.md"
+          ],
+          "rankMs": [
+            0.453708,
+            0.442792,
+            0.463458,
+            0.455667,
+            0.453833,
+            0.459208,
+            0.462625,
+            0.453709,
+            0.454708,
+            0.479417
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "feed-charset": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.428875,
+            0.44025,
+            0.429666,
+            0.433208,
+            0.428875,
+            0.430041,
+            0.509333,
+            0.42825,
+            0.485417,
+            0.430458
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "feed-separator": {
+          "documents": [
+            "feed-new.md",
+            "partner-feed.md",
+            "station-feed.md"
+          ],
+          "rankMs": [
+            0.431459,
+            0.45725,
+            0.494542,
+            0.43175,
+            0.431625,
+            0.441625,
+            0.436,
+            0.44625,
+            0.438625,
+            0.4455
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.3333333333333333
+        },
+        "gateway-timeout": {
+          "documents": [
+            "panel-monitor.md",
+            "access-clock.md",
+            "chart-timeout.md"
+          ],
+          "rankMs": [
+            0.437958,
+            0.426583,
+            0.438833,
+            0.434917,
+            0.439333,
+            0.439958,
+            0.436333,
+            0.438083,
+            0.436917,
+            0.435625
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "ledger-page": {
+          "documents": [
+            "photo-album.md",
+            "ledger-client.md",
+            "bookkeeping.md"
+          ],
+          "rankMs": [
+            0.432958,
+            0.438,
+            0.428208,
+            0.434166,
+            0.423042,
+            0.421292,
+            0.426084,
+            0.422958,
+            0.435917,
+            0.430166
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 0.5
+        },
+        "no-impact-encoder-display": {
+          "documents": [],
+          "rankMs": [
+            0.436458,
+            0.439792,
+            0.448709,
+            0.437292,
+            0.438042,
+            0.451583,
+            0.431292,
+            0.442583,
+            0.4435,
+            0.44475
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "no-impact-tide": {
+          "documents": [],
+          "rankMs": [
+            0.438792,
+            0.433958,
+            0.440375,
+            0.433834,
+            0.436542,
+            0.439041,
+            0.443833,
+            0.437042,
+            0.447584,
+            0.447583
+          ],
+          "recallAt5": null,
+          "reciprocalRank": null
+        },
+        "price-rounding": {
+          "documents": [
+            "pricing-review.md"
+          ],
+          "rankMs": [
+            0.435292,
+            0.436083,
+            0.463083,
+            0.436042,
+            0.435875,
+            0.434292,
+            0.461417,
+            0.432542,
+            0.443792,
+            0.440209
+          ],
+          "recallAt5": 1.0,
+          "reciprocalRank": 1.0
+        },
+        "screen-layout": {
+          "documents": [],
+          "rankMs": [
+            0.458167,
+            0.454917,
+            0.453459,
+            0.452458,
+            0.453375,
+            0.549959,
+            0.457167,
+            0.452958,
+            0.455292,
+            0.461958
+          ],
+          "recallAt5": 0.0,
+          "reciprocalRank": 0
+        },
+        "upload-backoff": {
+          "documents": [
+            "upload-client.md",
+            "render-farm.md"
+          ],
+          "rankMs": [
+            0.444583,
+            0.487375,
+            0.442667,
+            0.443542,
+            0.451917,
+            0.46275,
+            0.453625,
+            0.44475,
+            0.446041,
+            0.448292
+          ],
+          "recallAt5": 0.5,
+          "reciprocalRank": 1.0
+        }
+      },
+      "summary": {
+        "emptyGoldCandidateDocumentsAt5": 0,
+        "emptyGoldQueries": 2,
+        "emptyGoldWithCandidates": 0,
+        "mrr": 0.537037037037037,
+        "positiveQueries": 9,
+        "rankCalls": 110,
+        "rankP95Ms": 0.479417,
+        "recallAt5": 0.6555555555555556
+      }
+    }
+  },
+  "packages": {},
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "protocol": 1,
+  "python": "3.12.14",
+  "queries": 11,
+  "repeats": 10,
+  "scheduleSeed": 20261124,
+  "vectorBackend": "local",
+  "warmupPerModeQuery": 1
+}

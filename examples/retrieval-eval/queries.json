@@ -1,0 +1,116 @@
+[
+  {
+    "id": "cluster-default",
+    "heading": "KMeans",
+    "before": "n_init defaults to 10.",
+    "after": "n_init defaults to auto for KMeans.",
+    "relevant": [
+      "02-clustering.md",
+      "k05.md",
+      "p01.md",
+      "p02.md",
+      "p06.md"
+    ],
+    "rationale": "五篇活动笔记省略初始化次数，含 Partition 别名。p02 的旧版结果变化需确认。显式指定的两篇和锁定旧环境的归档不受影响。"
+  },
+  {
+    "id": "encoder-rename",
+    "heading": "OneHotEncoder",
+    "before": "sparse controls output format.",
+    "after": "sparse has been removed; use sparse_output to keep the same output format.",
+    "relevant": [
+      "01-config.md",
+      "03-features.md"
+    ],
+    "rationale": "OHE 别名直接传入旧关键字；另一篇从外部解包配置，需查配置。已使用 sparse_output 的笔记无需迁移。"
+  },
+  {
+    "id": "upload-backoff",
+    "heading": "Upload guide / send_file",
+    "before": "Retry a failed upload immediately.",
+    "after": "Retry a failed upload after a delay.",
+    "relevant": [
+      "upload-duty.md",
+      "upload-client.md"
+    ],
+    "rationale": "两份值班流程明确要求失败后立即重发，其中一份只有中文自然语言。离线渲染重试与上传无关。"
+  },
+  {
+    "id": "ledger-page",
+    "heading": "Ledger.rows",
+    "before": "Default page_size is 100.",
+    "after": "Default page_size is 50.",
+    "relevant": [
+      "ledger-client.md",
+      "bookkeeping.md"
+    ],
+    "rationale": "这两份账目流程按接口缺省的百条分页。相册的纸张排版无关。"
+  },
+  {
+    "id": "feed-charset",
+    "heading": "FeedReader",
+    "before": "The default encoding is latin-1.",
+    "after": "The default encoding is utf-8.",
+    "relevant": [
+      "partner-feed.md"
+    ],
+    "rationale": "合作方资料依赖缺省字符集解码 latin-1。气象数据及档案转换显式固定编码。"
+  },
+  {
+    "id": "feed-separator",
+    "heading": "FeedReader",
+    "before": "The default delimiter is a semicolon.",
+    "after": "The default delimiter is a comma.",
+    "relevant": [
+      "station-feed.md"
+    ],
+    "rationale": "气象站的分号文件依赖自动分隔。合作方与档案转换显式指定了分隔符。"
+  },
+  {
+    "id": "gateway-timeout",
+    "heading": "Gateway",
+    "before": "The default timeout is eight seconds.",
+    "after": "The default timeout is twenty seconds.",
+    "relevant": [
+      "access-clock.md",
+      "panel-monitor.md"
+    ],
+    "rationale": "中英文网关操作规范都以八秒为降级或告警依据。截图超时属于独立程序。"
+  },
+  {
+    "id": "price-rounding",
+    "heading": "PriceView",
+    "before": "The default precision is two decimals.",
+    "after": "The default precision is four decimals.",
+    "relevant": [
+      "pricing-review.md"
+    ],
+    "rationale": "账单界面截图依赖价格展示器未显式指定的舍入位数。"
+  },
+  {
+    "id": "screen-layout",
+    "heading": "Signage",
+    "before": "Place the navigation title on the left side of the floor plan.",
+    "after": "Place the navigation title above the floor plan.",
+    "relevant": [
+      "wayfinding.md"
+    ],
+    "rationale": "现场布局约定依赖标题与楼层图的相对位置；字库清点仅共享产品词。"
+  },
+  {
+    "id": "no-impact-encoder-display",
+    "heading": "OneHotEncoder",
+    "before": "The HTML diagram uses a blue border.",
+    "after": "The HTML diagram uses a green border.",
+    "relevant": [],
+    "rationale": "编码器笔记只涉及构造参数与矩阵形态，没有展示该图的笔记。"
+  },
+  {
+    "id": "no-impact-tide",
+    "heading": "Tide table",
+    "before": "Harbor predictions use noon observations.",
+    "after": "Harbor predictions use dusk observations.",
+    "relevant": [],
+    "rationale": "没有涉及港口预测的笔记。"
+  }
+]

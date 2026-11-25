@@ -1,0 +1,51 @@
+[
+  {
+    "id": "p01",
+    "note": "notes/p01.md",
+    "expected": "edit",
+    "reason": "旧版默认十次。省略参数会改变跨版本行为。",
+    "settled": true
+  },
+  {
+    "id": "p02",
+    "note": "notes/p02.md",
+    "expected": "ask",
+    "reason": "固定种子和分组数无法确定维护者希望保留十次还是采用新默认。",
+    "requiredDecision": "intent"
+  },
+  {
+    "id": "p03",
+    "note": "notes/p03.md",
+    "expected": "keep",
+    "reason": "目标语义是 auto。在题设的 1.4.2 环境中省略参数即采用 auto。",
+    "settled": true
+  },
+  {
+    "id": "p04",
+    "note": "notes/p04.md",
+    "expected": "edit",
+    "reason": "对照端现为一次，要匹配另一侧必须把显式值替换为十。",
+    "settled": true
+  },
+  {
+    "id": "p05",
+    "note": "notes/p05.md",
+    "expected": "ask",
+    "reason": "已确定使用哪个构造器，但该分支只规定了随机状态，没有交代重启次数的维护目标。",
+    "requiredDecision": "intent"
+  },
+  {
+    "id": "p06",
+    "note": "notes/p06.md",
+    "expected": "edit",
+    "reason": "保持旧版省略参数时的行为需显式固定为十次。",
+    "settled": true
+  },
+  {
+    "id": "p07",
+    "note": "notes/p07.md",
+    "expected": "keep",
+    "reason": "在限定的 1.4.2 环境中省略 n_init 即达到 1.4 计划采用的 auto。",
+    "settled": true
+  }
+]

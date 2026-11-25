@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "esbuild": "0.25.12",
+    "fflate": "0.8.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "name": "note-review-ui",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/App.jsx --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\" --outfile=../web/app.js",
+    "test": "node --test test/*.test.mjs"
+  }
+}

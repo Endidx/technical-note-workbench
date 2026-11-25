@@ -1,0 +1,74 @@
+[
+  {
+    "id": "k01",
+    "note": "notes/k01.md",
+    "expected": "edit",
+    "reason": "默认 k-means++ 在 1.4 只初始化一次，与迁移后仍需试十组起始中心的口径不符。应固定 n_init=10。"
+  },
+  {
+    "id": "k02",
+    "note": "notes/k02.md",
+    "expected": "keep",
+    "reason": "显式的 n_init=4 已决定次数。调整库的默认值不会覆盖它。"
+  },
+  {
+    "id": "k03",
+    "note": "notes/k03.md",
+    "expected": "ask",
+    "reason": "省略 n_init 会改变实际次数，但作者尚未指定要延用旧次数还是试用新版默认。"
+  },
+  {
+    "id": "k04",
+    "note": "notes/k04.md",
+    "expected": "keep",
+    "reason": "代码段归属于固定版本的历史截图，不作为升级后执行的步骤。改写会失去原始记录。"
+  },
+  {
+    "id": "k05",
+    "note": "notes/k05.md",
+    "expected": "edit",
+    "reason": "Partition 是导入别名，创建的是 KMeans。默认初始化策略仍是 k-means++，需显式指定十次以满足交付口径。"
+  },
+  {
+    "id": "k06",
+    "note": "notes/k06.md",
+    "expected": "keep",
+    "reason": "1.1 默认十次；1.4 在 init=\"random\" 时由 auto 选择十次。本次迁移已经满足笔记所需的有效次数。"
+  },
+  {
+    "id": "k07",
+    "note": "notes/k07.md",
+    "expected": "ask",
+    "reason": "外部参数可能已设置 n_init 或 init；应索取实际配置并确认目标，直接增加关键字还可能和展开的参数冲突。"
+  },
+  {
+    "id": "k08",
+    "note": "notes/k08.md",
+    "expected": "edit",
+    "reason": "带模块前缀的构造调用显式选择 k-means++ 但省略 n_init；新版默认一次，无法满足十次试验要求。"
+  },
+  {
+    "id": "k09",
+    "note": "notes/k09.md",
+    "expected": "keep",
+    "reason": "作者明确要测新版默认行为，省略 n_init 正好表达这个目的。"
+  },
+  {
+    "id": "k10",
+    "note": "notes/k10.md",
+    "expected": "keep",
+    "reason": "这份运行手册的执行环境仍锁在旧版本，其他服务的升级不构成修改本段的理由。"
+  },
+  {
+    "id": "k11",
+    "note": "notes/k11.md",
+    "expected": "edit",
+    "reason": "random_state=10 控制随机数生成，不能指定初始化次数。仍须显式添加 n_init=10。"
+  },
+  {
+    "id": "k12",
+    "note": "notes/k12.md",
+    "expected": "ask",
+    "reason": "同一段调用有两个相互冲突的使用目标；先确认主用途，或询问是否应拆成两个示例。"
+  }
+]

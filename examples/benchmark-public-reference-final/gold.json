@@ -1,0 +1,61 @@
+[
+  {
+    "id": "f01",
+    "note": "notes/f01.md",
+    "expected": "edit",
+    "reason": "此前普通 KMeans 默认运行十次。此处只显式设置了选点方法，需要增加 n_init=10。",
+    "settled": true,
+    "targetNInit": 10
+  },
+  {
+    "id": "f02",
+    "note": "notes/f02.md",
+    "expected": "ask",
+    "reason": "抽样上限和固定种子均未规定重启次数。需确认希望保留或采用哪种策略。",
+    "requiredDecision": "intent"
+  },
+  {
+    "id": "f03",
+    "note": "notes/f03.md",
+    "expected": "keep",
+    "reason": "运行环境中省略参数已满足 auto 策略。",
+    "settled": true
+  },
+  {
+    "id": "f04",
+    "note": "notes/f04.md",
+    "expected": "edit",
+    "reason": "父版本显式运行一次，需把它替换为 10 才能达到记录中的目标。",
+    "settled": true,
+    "targetNInit": 10
+  },
+  {
+    "id": "f05",
+    "note": "notes/f05.md",
+    "expected": "ask",
+    "reason": "分组和成员计数没有给出初始化目标，需要询问策略。",
+    "requiredDecision": "intent"
+  },
+  {
+    "id": "f06",
+    "note": "notes/f06.md",
+    "expected": "keep",
+    "reason": "当前已传 auto，符合新版本分支。完整跨版本函数还实现低版本路径。",
+    "settled": true
+  },
+  {
+    "id": "f07",
+    "note": "notes/f07.md",
+    "expected": "edit",
+    "reason": "构造器省略了 n_init，应增加目标值 10。",
+    "settled": true,
+    "targetNInit": 10
+  },
+  {
+    "id": "f08",
+    "note": "notes/f08.md",
+    "expected": "ask",
+    "reason": "评分指标的存在没有说明希望保留旧默认还是采用其他策略。",
+    "requiredDecision": "intent"
+  }
+]

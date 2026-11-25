@@ -1,0 +1,110 @@
+[
+  {
+    "filename": "01-config.md",
+    "path": "examples/batch-upgrade/notes/01-config.md"
+  },
+  {
+    "filename": "02-clustering.md",
+    "path": "examples/batch-upgrade/notes/02-clustering.md"
+  },
+  {
+    "filename": "03-features.md",
+    "path": "examples/batch-upgrade/notes/03-features.md"
+  },
+  {
+    "filename": "04-ready.md",
+    "path": "examples/batch-upgrade/notes/04-ready.md"
+  },
+  {
+    "filename": "05-stats.md",
+    "path": "examples/batch-upgrade/notes/05-stats.md"
+  },
+  {
+    "filename": "p01.md",
+    "path": "examples/benchmark-public-migrations/notes/p01.md"
+  },
+  {
+    "filename": "p02.md",
+    "path": "examples/benchmark-public-migrations/notes/p02.md"
+  },
+  {
+    "filename": "p06.md",
+    "path": "examples/benchmark-public-migrations/notes/p06.md"
+  },
+  {
+    "filename": "f06.md",
+    "path": "examples/benchmark-public-reference-final/notes/f06.md"
+  },
+  {
+    "filename": "02-explicit.md",
+    "path": "examples/notes/02-explicit.md"
+  },
+  {
+    "filename": "03-archive.md",
+    "path": "examples/notes/03-archive.md"
+  },
+  {
+    "filename": "k05.md",
+    "path": "examples/benchmark/notes/k05.md"
+  },
+  {
+    "filename": "upload-duty.md",
+    "content": "# 文件交接值班\n## 首次失败\n传输失败时立刻重新发送，恢复后登记收件人；轮班时请照此执行。\n## 重复回执\n如果对方已经收到文件，只保留第一次成功的回执。\n"
+  },
+  {
+    "filename": "upload-client.md",
+    "content": "# 照片回传\n## Mobile errors\nAfter a failed upload, retry immediately. This procedure follows the service policy.\n## Logs\nCompare the server receipt with the photo index before clearing the queue.\n"
+  },
+  {
+    "filename": "render-farm.md",
+    "content": "# 离线渲染\n单帧输出失败允许重试；这些任务运行在本地工作站，无需传输文件。\n"
+  },
+  {
+    "filename": "ledger-client.md",
+    "content": "# 收款流水接口\n## 定时采集\n调用 Ledger.rows() 拉取全部账目。服务按默认每页一百条返回，批次预算按这个数来排。\n## 验收\n分页末尾的非空记录数计入次日对账表。复核抽查每一页的最后一行。\n"
+  },
+  {
+    "filename": "bookkeeping.md",
+    "content": "# 财务交接\n财务系统逐页打印账本。清单模板的每页条数沿用流水接口的缺省值，每百行换页。\n"
+  },
+  {
+    "filename": "photo-album.md",
+    "content": "# 相册排版\n照片打印按版面大小分页，默认每页摆六张。美术自行调节尺寸。\n"
+  },
+  {
+    "filename": "partner-feed.md",
+    "content": "# 合作方对账文件\n## 传入文件\n用 FeedReader 的默认字符集打开账单。对方交付的老文件依照 latin-1 写入。\n## 列数检查\n解析时始终显式传入分隔符“|”，避免内容中有逗号。\n"
+  },
+  {
+    "filename": "station-feed.md",
+    "content": "# 气象站导入\n仪器输出以分号分隔。抽检脚本交给 FeedReader 自动按原先的缺省分隔符拆字段。\n编码固定为 UTF-8。\n"
+  },
+  {
+    "filename": "feed-new.md",
+    "content": "# 档案转换\n```python\nfrom partner import FeedReader\nreader = FeedReader(encoding=\"utf-8\", delimiter=\",\")\n```\n存档只读，上述参数在导出与回灌时都显式固定。\n"
+  },
+  {
+    "filename": "access-clock.md",
+    "content": "# 夜班网关\n请求端使用 Gateway 的默认等待时限。值班员按八秒准备降级，超时后切本地联系人簿。\n"
+  },
+  {
+    "filename": "panel-monitor.md",
+    "content": "# Gateway integration\nThe watchdog assumes the gateway's default timeout is eight seconds. Escalate only after the full timeout window.\n"
+  },
+  {
+    "filename": "chart-timeout.md",
+    "content": "# 静态图表\n前端截图用十秒超时。绘图机读磁盘上的报表，与外部网关无关。\n"
+  },
+  {
+    "filename": "pricing-review.md",
+    "content": "# 账单显示\n按旧版 PriceView 的缺省舍入位数展示小额试算结果，截屏会与客服手册对照。\n"
+  },
+  {
+    "filename": "wayfinding.md",
+    "content": "# 入口屏幕的布局\n导航标题在左侧，楼层平面图占据余下的宽度。验收时照着现场照片核对布局。\n"
+  },
+  {
+    "filename": "font-assets.md",
+    "content": "# 字库清点\n检查 signage 的字体授权和文件名，每个文件的摘要随登记表保存。\n"
+  }
+]
