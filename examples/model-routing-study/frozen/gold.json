@@ -1,0 +1,196 @@
+[
+  {
+    "id": "p01",
+    "note": "notes/p01.md",
+    "family": "KMeans",
+    "stratum": "kmeans-ambiguous",
+    "expected": "ask",
+    "reason": "对照旧图和尽快出预览都出现了，缺少升级后拟遵循的初始化策略。",
+    "evidenceMode": "all",
+    "evidence": [
+      "偶尔要在交班前先出一张预览。"
+    ]
+  },
+  {
+    "id": "p02",
+    "note": "notes/p02.md",
+    "family": "OneHotEncoder",
+    "stratum": "encoder-rename",
+    "expected": "edit",
+    "reason": "旧关键字已移除，保留布尔值和未知类别策略。",
+    "evidenceMode": "all",
+    "evidence": [
+      "sparse=False"
+    ],
+    "old": "sparse=False",
+    "replacement": "sparse_output=False"
+  },
+  {
+    "id": "p03",
+    "note": "notes/p03.md",
+    "family": "OneHotEncoder",
+    "stratum": "already-compatible",
+    "expected": "keep",
+    "reason": "已经使用目标参数，输出约定一致。",
+    "evidenceMode": "all",
+    "evidence": [
+      "sparse_output=True"
+    ]
+  },
+  {
+    "id": "p04",
+    "note": "notes/p04.md",
+    "family": "KMeans",
+    "stratum": "kmeans-explicit",
+    "expected": "edit",
+    "reason": "默认初始化器在目标版本只跑一次，明确的十次要求需要显式设置。",
+    "evidenceMode": "all",
+    "evidence": [
+      "设备组要求升级后也把十栏填满。"
+    ],
+    "old": "random_state=73)",
+    "replacement": "random_state=73, n_init=10)",
+    "targetNInit": 10
+  },
+  {
+    "id": "p05",
+    "note": "notes/p05.md",
+    "family": "KMeans",
+    "stratum": "kmeans-external",
+    "expected": "ask",
+    "reason": "外部配置可能已经传入初始化次数，且当前值和下游约定均未提供。",
+    "evidenceMode": "all",
+    "evidence": [
+      "初始化次数是否由调度台下发得查当天配置。"
+    ]
+  },
+  {
+    "id": "p06",
+    "note": "notes/p06.md",
+    "family": "OneHotEncoder",
+    "stratum": "encoder-rename",
+    "expected": "edit",
+    "reason": "仅替换公共 API 的旧关键字，保持输出表示与类型。",
+    "evidenceMode": "all",
+    "evidence": [
+      "sparse=True"
+    ],
+    "old": "sparse=True",
+    "replacement": "sparse_output=True"
+  },
+  {
+    "id": "p07",
+    "note": "notes/p07.md",
+    "family": "KMeans",
+    "stratum": "already-compatible",
+    "expected": "keep",
+    "reason": "对 random 初始化，旧默认和目标 auto 都执行十次，现有调用满足约定。",
+    "evidenceMode": "all",
+    "evidence": [
+      "init=\"random\""
+    ]
+  },
+  {
+    "id": "p08",
+    "note": "notes/p08.md",
+    "family": "KMeans",
+    "stratum": "kmeans-explicit",
+    "expected": "keep",
+    "reason": "作者明确采用安装版本的默认行为，省略 n_init 满足该要求。",
+    "evidenceMode": "all",
+    "evidence": [
+      "初始化预算完全跟随安装版本的默认设置。"
+    ]
+  },
+  {
+    "id": "p09",
+    "note": "notes/p09.md",
+    "family": "OneHotEncoder",
+    "stratum": "encoder-rename",
+    "expected": "edit",
+    "reason": "局部字典是唯一调用的配置，应仅更名传入该构造器的键。",
+    "evidenceMode": "all",
+    "evidence": [
+      "\"sparse\": False"
+    ],
+    "old": "\"sparse\": False",
+    "replacement": "\"sparse_output\": False"
+  },
+  {
+    "id": "p10",
+    "note": "notes/p10.md",
+    "family": "KMeans",
+    "stratum": "kmeans-ambiguous",
+    "expected": "ask",
+    "reason": "有两条相互冲突的指示且尚无优先级，应向维护者询问。",
+    "evidenceMode": "all",
+    "evidence": [
+      "两人还没有约定哪个要求负责这段示例。"
+    ]
+  },
+  {
+    "id": "p11",
+    "note": "notes/p11.md",
+    "family": "KMeans",
+    "stratum": "kmeans-explicit",
+    "expected": "edit",
+    "reason": "导入别名仍是 sklearn KMeans，原先依赖的十次重启已明确保留。",
+    "evidenceMode": "all",
+    "evidence": [
+      "替换软件时这条复核条件继续生效。"
+    ],
+    "old": "random_state=31)",
+    "replacement": "random_state=31, n_init=10)",
+    "targetNInit": 10
+  },
+  {
+    "id": "p12",
+    "note": "notes/p12.md",
+    "family": "OneHotEncoder",
+    "stratum": "encoder-rename",
+    "expected": "edit",
+    "reason": "开关的值来自外部，但调用点的关键字明确，替换名称可保留运行时表达式。",
+    "evidenceMode": "all",
+    "evidence": [
+      "sparse=use_csr"
+    ],
+    "old": "sparse=use_csr",
+    "replacement": "sparse_output=use_csr"
+  },
+  {
+    "id": "p13",
+    "note": "notes/p13.md",
+    "family": "KMeans",
+    "stratum": "already-compatible",
+    "expected": "keep",
+    "reason": "整数 12 在两个版本均有效，默认值变化不影响显式配置。",
+    "evidenceMode": "all",
+    "evidence": [
+      "n_init=12"
+    ]
+  },
+  {
+    "id": "p14",
+    "note": "notes/p14.md",
+    "family": "KMeans",
+    "stratum": "kmeans-external",
+    "expected": "ask",
+    "reason": "不同部署位置要求不同，须提供当前机器角色才可决定修订。",
+    "evidenceMode": "all",
+    "evidence": [
+      "机房分配由当日安装记录决定，本页没有机器编号。"
+    ]
+  },
+  {
+    "id": "p15",
+    "note": "notes/p15.md",
+    "family": "KMeans",
+    "stratum": "kmeans-ambiguous",
+    "expected": "ask",
+    "reason": "随机种子不能决定迁移时是否保留原默认的初始化次数。",
+    "evidenceMode": "all",
+    "evidence": [
+      "没写多次启动取优是否属于要保留的实验条件。"
+    ]
+  }
+]

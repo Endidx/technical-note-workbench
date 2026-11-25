@@ -1,0 +1,26 @@
+{
+  "library": "scikit-learn",
+  "version": "1.0.2",
+  "estimator": "sklearn.cluster.KMeans",
+  "source": "https://github.com/scikit-learn/scikit-learn/blob/1.0.2/sklearn/cluster/_kmeans.py#L911-L991",
+  "constructor": {
+    "init": "k-means++",
+    "n_init": 10
+  },
+  "evidence": [
+    {
+      "lines": "915-916",
+      "quote": "init=\"k-means++\",\nn_init=10,"
+    },
+    {
+      "lines": "939",
+      "quote": "self._n_init = self.n_init"
+    },
+    {
+      "lines": "983-991",
+      "quote": "if hasattr(self.init, \"__array__\") and self._n_init != 1:",
+      "effect": "explicit array centers force a single initialization"
+    }
+  ],
+  "upstreamSha256": "fd9142cfd073495c5bf9d17cf283c792b54b0a01ef81e4cbd444b9afa9e80344"
+}

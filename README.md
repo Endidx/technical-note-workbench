@@ -35,6 +35,7 @@ cd technical-note-workbench
 | 为什么结合关键词和向量检索？ | [27 篇笔记、11 个查询的检索消融](examples/retrieval-eval/README.md) |
 | 并发快了多少？重启是否重复工作？ | [本机 25 篇笔记三组配对计时与 SIGKILL 恢复记录](examples/batch-performance/README.md) |
 | 哪些局部配置能直接修改，哪些必须追问？ | [14 篇定向回归的标注和逐篇结果](examples/batch-decisions/README.md) |
+| 什么时候值得调用模型？ | [15 篇发布后留出笔记的规则与按需模型对照](examples/model-routing-study/README.md) |
 | 公开项目是否真的这样改过？ | [6 个 GitHub 项目的父版本与迁移提交](examples/public-encoder/README.md) |
 
 ## 部署与材料
